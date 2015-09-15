@@ -3,12 +3,63 @@
   <head>
     <title>Movie Tickets</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src='/js/jquery-1.11.3.js'></script>
-    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src='js/jquery-1.11.3.js'></script>
+    <script src="js/scripts.js"></script>
 </head>
   <body>
-    di
+    <div class="container">
 
+    <form id="new-movie">
+      <div id="new-ticket">
+        <div class="form-group">
+          <label for="movie-names">Select a movie:</label>
+          <select class="form-control" id="movie-name">
+            <option>Star Wars: The Force Awakens</option>
+            <option>The Martian</option>
+            <option>Mad Max: Fury Road</option>
+            <option>Attack on Titan: Part 1</option>
+            <option>Macbeth</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="movie-times">Select a time:</label>
+          <select class="form-control" id="movie-time">
+            <option value="12">12:00</option>
+            <option value="14.5">2:30</option>
+            <option value="17">5:00</option>
+            <option value="19.5">7:30</option>
+            <option value="22">10:00</option>
+            <option value=".5">12:30</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="age">How old are you?</label>
+          <div class="row">
+            <div class="col-xs-2">
+              <input type="number" max="130" min="0" name="age" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Buy Ticket(s)</button>
+      <span class="btn btn-warning" id="add-ticket">Add another ticket!</span>
+    </form>
+
+    <div class="ticket-price">
+      <h2>Ticket Cost</h2>
+        <p>Your total cost is: <span class="total-cost"></span>.</p>
+
+    </div>
+
+
+
+
+
+
+    </div>
   </body>
 </html>

@@ -11,16 +11,3 @@ describe('Ticket', function() {
     expect(testTicket.price).to.equal(13);
   });
 });
-
-
-// if age < 18
-//   baseCost = 6
-//
-// else if age > 18 && age < 65
-//   baseCost = 8
-//
-// else
-//   baseCost = 4
-//
-// if time >= 18
-//   baseCost += 5
