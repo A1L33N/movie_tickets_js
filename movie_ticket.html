@@ -12,34 +12,36 @@
 
     <form id="new-movie">
       <div id="new-ticket">
-        <div class="form-group">
-          <label for="movie-names">Select a movie:</label>
-          <select class="form-control" id="movie-name">
-            <option>Star Wars: The Force Awakens</option>
-            <option>The Martian</option>
-            <option>Mad Max: Fury Road</option>
-            <option>Attack on Titan: Part 1</option>
-            <option>Macbeth</option>
-          </select>
-        </div>
+        <div class="added-ticket">
+          <div class="form-group">
+            <label for="movie-names">Select a movie:</label>
+            <select class="form-control" id="movie-name">
+              <option value="Star Wars: The Force Awakens">Star Wars: The Force Awakens</option>
+              <option value="The Martian">The Martian</option>
+              <option value="Mad Max: Fury Road">Mad Max: Fury Road</option>
+              <option value="Attack on Titan: Part 1">Attack on Titan: Part 1</option>
+              <option value="Macbeth">Macbeth</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="movie-times">Select a time:</label>
-          <select class="form-control" id="movie-time">
-            <option value="12">12:00</option>
-            <option value="14.5">2:30</option>
-            <option value="17">5:00</option>
-            <option value="19.5">7:30</option>
-            <option value="22">10:00</option>
-            <option value=".5">12:30</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="movie-times">Select a time:</label>
+            <select class="form-control" id="movie-time">
+              <option value="12">12:00</option>
+              <option value="14.5">2:30</option>
+              <option value="17">5:00</option>
+              <option value="19.5">7:30</option>
+              <option value="22">10:00</option>
+              <option value=".5">12:30</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="age">How old are you?</label>
-          <div class="row">
-            <div class="col-xs-2">
-              <input type="number" max="130" min="0" name="age" class="form-control">
+          <div class="form-group">
+            <label for="age">How old are you?</label>
+            <div class="row">
+              <div class="col-xs-2">
+                <input id="age" type="number" max="130" min="0" name="age" class="form-control">
+              </div>
             </div>
           </div>
         </div>
@@ -49,9 +51,22 @@
       <span class="btn btn-warning" id="add-ticket">Add another ticket!</span>
     </form>
 
-    <div class="ticket-price">
+
+
+    <div id="show-tickets">
+      <h2>Tickets:</h2>
+      <ul id="tickets">
+
+      </ul>
+        <div id="show-info">
+          <p>Name: <span class="movie-name"></span></p>
+          <p>Time: <span class="movie-time"></span></p>
+          <p>Age: <span class="age"></span></p>
+          <p>Price $: <span class="ticket-price"></span>.00</p>
+        </div>
+
       <h2>Ticket Cost</h2>
-        <p>Your total cost is: <span class="total-cost"></span>.</p>
+      <p>Your total cost is $: <span class="total-cost"></span>.00</p>
 
     </div>
 

@@ -1,0 +1,16 @@
+#show-tickets {
+  display:none;
+}
+
+#show-info {
+  display:none;
+}
+
+.ticket-list {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.ticket-list:hover {
+  text-decoration: underline;
+}
